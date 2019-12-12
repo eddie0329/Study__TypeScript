@@ -19,6 +19,6 @@
   "homepage": "https://github.com/eddie0329/Study__TypeScript#readme",
   "dependencies": {
     "tslint": "^5.19.0",
-    "typescript": "^3.6.2"
+    "typescript": "^3.7.3"
   }
 }

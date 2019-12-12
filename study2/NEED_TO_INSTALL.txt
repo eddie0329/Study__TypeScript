@@ -1,0 +1,7 @@
+npm i typescript
+
+// add package.json -> script -> "transpile": tsc
+
+tsc --init // init tsconfig.json file
+
+npm i tslint -D;
