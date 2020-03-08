@@ -1,19 +1,24 @@
 {
-  "name": "study2",
+  "name": "Study__TypeScript",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "devwatch": "tsc -w",
-    "transpile": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eddie0329/Study__TypeScript.git"
+  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "typescript": "^3.7.3"
+  "bugs": {
+    "url": "https://github.com/eddie0329/Study__TypeScript/issues"
   },
-  "devDependencies": {
-    "tslint": "^5.20.1"
+  "homepage": "https://github.com/eddie0329/Study__TypeScript#readme",
+  "dependencies": {
+    "tslint": "^5.19.0",
+    "typescript": "^3.7.3"
   }
 }
