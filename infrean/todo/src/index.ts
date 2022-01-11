@@ -1,11 +1,10 @@
 type todo = {
-  id: number,
-  title: string,
-  done: boolean
-}
+  id: number;
+  title: string;
+  done: boolean;
+};
 
 let todoItems: todo[];
-
 
 // api
 function fetchTodoItems() {
