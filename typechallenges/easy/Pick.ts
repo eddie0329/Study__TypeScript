@@ -1,7 +1,7 @@
 /* _____________ Your Code Here _____________ */
 
-type MyPick<T, K> = {
-  [key in keyof K]: T[key]
+type MyPick<T, K extends keyof T> = {
+  [key in K]?: T[key]
 }
 
 /* _____________ Test Cases _____________ */
