@@ -19,4 +19,3 @@ type cases = [
 ]
 
 type test = TrimLeft<' str'>
-
