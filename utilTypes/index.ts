@@ -9,7 +9,7 @@
  * - [ ] Readonly<T>
  * - [ ] Record<K,T>
  * - [X] Pick<T,K>
- * - [ ] Omit<T,K>
+ * - [X] Omit<T,K>
  * - [ ] Exclude<T,U>
  * - [ ] NonNullable<T>
  * - [ ] Parameters<T>
@@ -39,12 +39,14 @@ type Unshift<T extends any[], U> = [U, ...T];
 type ObjectLiteral<T> = { [K in keyof T]: T[K]; }
 // type Partial<T> = { [K inf keyof T]?: T[K]; }
 // type Pick<T, K extends keyof T> = { [P in K]: T[P]; }
+// type Omit<T, K extends string | number | symbol> = { [P in Exclude<keyof T, K>]: T[P]; }
 
 /*_______________________________Promise______________________________________*/
 
 /*_______________________________Function_____________________________________*/
 
 /*_______________________________Readonly____________________________________*/
+// Readonly
 type SelectedReadonly<T, K extends keyof T = keyof T> = 
   Readonly<Pick<T, K>> & Omit<T, K>;
 type DeepReadonly<T> = {
