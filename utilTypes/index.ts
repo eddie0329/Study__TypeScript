@@ -10,6 +10,7 @@
  * - [X] Record<K,T>
  * - [X] Pick<T,K>
  * - [X] Omit<T,K>
+ * - [X] Uppercase<S>
  * - [ ] Exclude<T,U>
  * - [ ] NonNullable<T>
  * - [ ] Parameters<T>
@@ -43,6 +44,9 @@ type Unshift<T extends any[], U> = [U, ...T];
 type ObjectLiteral<T> = { [K in keyof T]: T[K]; }
 
 /*_______________________________Promise______________________________________*/
+
+/*________________________________String______________________________________*/
+// type Uppercase<S extends string> = intrinsic
 
 /*_______________________________Function_____________________________________*/
 
