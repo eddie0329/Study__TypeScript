@@ -1,6 +1,11 @@
 /* _____________ Your Code Here _____________ */
 
-type Permutation<T> = any
+type Permutation<T, U = T> =  
+  [T] extends [never] ? 
+    [] : 
+    T extends U ? 
+      [T, ...Permutation<Exclude<U, T>>] : 
+      [];
 
 
 /* _____________ Test Cases _____________ */
